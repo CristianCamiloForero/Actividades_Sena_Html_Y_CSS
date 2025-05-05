@@ -1,0 +1,49 @@
+body {
+  padding-top: 120px; 
+}
+
+header {
+  position: fixed;
+  margin-top: -20px;
+  top: 0;
+  left: 0; 
+  width: 100%;
+  background: white;
+  border-bottom: 1px solid #ccc;
+  z-index: 1000;
+  padding: 10px 0;
+  text-align: center;
+}
+  
+  section::before {
+    content: "";
+    display: block;
+    height: 120px; 
+    margin-top: -120px;
+    visibility: hidden;
+    pointer-events: none;
+    
+  }
+
+
+  .header-buttons {
+    margin-top: 10px;
+  }
+  
+  .header-buttons button {
+    margin-right: 10px;
+    padding: 8px 16px;
+    font-size: 1rem;
+    cursor: pointer;
+    border: none;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .header-buttons button:hover {
+    background-color: #000000;
+    color: white;
+  }
+  
